@@ -1,5 +1,5 @@
 import axios, { AxiosRequestConfig, AxiosResponse } from 'axios';
-import { Alert } from './types';
+import { ActiveAlertsResponse, Alert } from './types';
 
 /**
  * Client for retrieving active alerts.
@@ -37,11 +37,11 @@ export class AlertsClient {
         headers,
       };
 
-      const response: AxiosResponse<Alert[]> = await axios(config);
+      const response: AxiosResponse<ActiveAlertsResponse> = await axios(config);
 
       if (response.status === 200) {
         this.lastModified = response.headers['last-modified'] || null;
-        return response.data;
+        return response.data.alerts;
       } else {
         throw new Error('Failed to fetch active alerts');
       }
