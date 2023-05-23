@@ -1,6 +1,6 @@
 {
   "name": "alerts-ua",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Client library for retrieving active alerts in Ukraine",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
