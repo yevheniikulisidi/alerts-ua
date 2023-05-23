@@ -1,5 +1,5 @@
 {
-  "name": "alerts-in-ua",
+  "name": "alerts-ua",
   "version": "1.0.0",
   "description": "Client library for retrieving active alerts in Ukraine",
   "main": "dist/index.js",
@@ -10,13 +10,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yevheniikulisidi/alerts-in-ua.git"
+    "url": "https://github.com/yevheniikulisidi/alerts-ua.git"
   },
   "keywords": [
     "alerts",
     "ukraine",
     "ua",
-    "alerts-in-ua"
+    "alerts-ua"
   ],
   "author": "Yevhenii Kulisidi",
   "license": "MIT",
