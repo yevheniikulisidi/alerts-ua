@@ -11,7 +11,7 @@ The API documentation is available at [https://devs.alerts.in.ua/](https://devs.
 To install the library, use the following command:
 
 ```bash
-npm install alerts-in-ua
+npm install alerts-ua
 ```
 
 ## Usage
@@ -21,7 +21,7 @@ To use the library, use the following code:
 ### TypeScript
 
 ```typescript
-import { AlertsClient } from 'alerts-in-ua';
+import { AlertsClient } from 'alerts-ua';
 
 // Create an instance of the AlertsClient with your API token
 const client = new AlertsClient('your-api-token');
