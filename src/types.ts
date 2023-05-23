@@ -1,4 +1,16 @@
 /**
+ * Interface for representing the response of the /alerts/active endpoint.
+ */
+export interface ActiveAlertsResponse {
+  alerts: Alert[]; // Array of alert objects
+  meta: {
+    last_updated_at: Date; // Last updated time of the record in the database
+    type: unknown; // Type of the response
+  };
+  disclaimer: string; // Disclaimer
+}
+
+/**
  * Interface for representing alert data.
  */
 export interface Alert {
