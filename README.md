@@ -44,7 +44,7 @@ Replace `'your-api-token'` with your actual API token.
 ### JavaScript
 
 ```javascript
-const AlertsClient = require('alerts-client');
+const { AlertsClient } = require('alerts-ua');
 
 // Create an instance of the AlertsClient with your API token
 const client = new AlertsClient('your-api-token');
