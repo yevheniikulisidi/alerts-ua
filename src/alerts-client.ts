@@ -1,5 +1,6 @@
 import axios, { AxiosRequestConfig, AxiosResponse } from 'axios';
-import { ActiveAlertsResponse, Alert } from './types';
+import { locations } from './locations';
+import { Alert, ActiveAlertsResponse, Location } from './types';
 
 /**
  * Client for retrieving active alerts.
@@ -48,5 +49,22 @@ export class AlertsClient {
     } catch (error) {
       throw new Error('An error occurred while fetching active alerts');
     }
+  }
+
+  /**
+   * Retrieves a list of locations.
+   * @returns {Location[]} Array of location objects.
+   */
+  public getLocations(): Location[] {
+    return locations;
+  }
+
+  /**
+   * Retrieves a location by its unique identifier.
+   * @param uid Unique identifier of the location.
+   * @returns {Location | undefined} Location object.
+   */
+  public getLocation(uid: string): Location | undefined {
+    return locations.find((location) => location.uid === uid);
   }
 }

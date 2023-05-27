@@ -32,3 +32,11 @@ export interface Alert {
   notes: string; // Notes
   calculated: boolean; // Indicates whether the alert's end time is predicted or based on actual end time
 }
+
+/**
+ * Interface for representing location data.
+ */
+export interface Location {
+  uid: string; // Unique identifier of the location
+  location_title: string; // Location name
+}
