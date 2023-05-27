@@ -37,6 +37,12 @@ client
     // Handle any errors that occurred during the API request
     console.error('Error:', error.message);
   });
+
+// Call the getLocations method to retrieve the list of locations
+console.log(client.getLocations());
+
+// Call the getLocation method to retrieve the location by ID
+console.log(client.getLocation('10'));
 ```
 
 Replace `'your-api-token'` with your actual API token.
@@ -60,6 +66,12 @@ client
     // Handle any errors that occurred during the API request
     console.error('Error:', error.message);
   });
+
+// Call the getLocations method to retrieve the list of locations
+console.log(client.getLocations());
+
+// Call the getLocation method to retrieve the location by ID
+console.log(client.getLocation('10'));
 ```
 
 Replace `'your-api-token'` with your actual API token.
